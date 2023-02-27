@@ -1,0 +1,49 @@
+ion-toolbar{
+  --background: #473f97;
+}
+.ion-padding{
+  --background: #fff;
+  p{
+    color: #000;
+  }
+}
+ion-menu::part(backdrop) {
+  background-color: #3d348b;
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+
+  box-shadow: 4px 0px 16px #9c89b8;
+}
+
+:host{
+  ion-tab-bar{
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    --background: #fff;
+    ion-icon{
+      font-size: 1.6rem;
+      color: #9c89b8;
+    }
+  }
+
+  ion-tab-button{
+    max-width: 56px;
+    max-height: 36px;
+  }
+
+  .tab-selected{
+    color: #fff;
+    background-color: #473f97;
+    border-radius: 50px;
+    max-width: 65px;
+    max-height: 45px;
+  }
+}
+ion-fab-button
+{
+  --background: #473f97;
+}

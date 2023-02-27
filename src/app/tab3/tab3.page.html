@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <span slot="start"><ion-icon name="apps-outline"></ion-icon></span>
+    <span slot="end"><ion-icon name="notifications-outline"></ion-icon></span>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="heading">
+    <h3>Find your <span>Partner</span></h3>
+    <h3>Here <span><ion-icon name="heart-outline"></ion-icon></span></h3>
+  </div>
+
+  <div class="search-bar">
+    <ion-input placeholder="Search"></ion-input>
+    <ion-icon name="search-outline"></ion-icon>
+  </div>
+
+  <div class="profile-cards">
+    <ion-card routerLink="/view-profile">
+      <div class="like-info">
+        2.5k <ion-icon name="heart-outline"></ion-icon>
+      </div>
+      <img src="/assets/img/image1.jpg">
+      <div class="user-info">
+        <p>Olivia, 21</p>
+        <p><ion-icon name="location-outline"></ion-icon> (2km)</p>
+      </div>
+    </ion-card>
+    <ion-card routerLink="/view-profile">
+      <div class="like-info">
+        2.5k <ion-icon name="heart-outline"></ion-icon>
+      </div>
+      <img src="/assets/img/image1.jpg">
+      <div class="user-info">
+        <p>Olivia, 21</p>
+        <p><ion-icon name="location-outline"></ion-icon> (2km)</p>
+      </div>
+    </ion-card>
+    <ion-card routerLink="/view-profile">
+      <div class="like-info">
+        2.5k <ion-icon name="heart-outline"></ion-icon>
+      </div>
+      <img src="/assets/img/image1.jpg">
+      <div class="user-info">
+        <p>Olivia, 21</p>
+        <p><ion-icon name="location-outline"></ion-icon> (2km)</p>
+      </div>
+    </ion-card>
+  </div>
+
+  <div class="story-section">
+    <div id="divider"><p></p></div>
+    <h3>Story for you</h3>
+
+    <div class="stories">
+      <div class="story" *ngFor="let story of [].constructor(10); let i = index">
+        <ion-avatar>
+          <ion-icon name="add-outline" *ngIf="i ==0"></ion-icon>
+          <img src="https://i.pravatar.cc/{{(i+10)*10}}" alt="">
+        </ion-avatar>
+        <p>User {{i+1}}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

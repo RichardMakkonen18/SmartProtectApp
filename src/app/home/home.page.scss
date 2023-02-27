@@ -1,0 +1,145 @@
+ion-content{
+    --background: #cdb4db;
+}
+.top-section
+{
+    min-height: 150px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #473f97;
+    padding-bottom: 32px;
+    .top-menu
+    {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        font-weight: bolder;
+
+        h2{
+            margin-top: 10px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        ion-select{
+            border: 3px solid #fff;
+            --placeholder-color: #61688b;
+            --placeholder-opacity: 1 !important;
+            border-radius: 20px;
+            // background-color: #fff;
+        }
+
+        ion-select::part(icon){
+            color: #61688b;
+            opacity: 1;
+            margin-right: 10px;
+        }
+    }
+
+    .sub-title{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        h3{
+            color: #fff;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p{
+            color: #c7c7c7;
+            line-height: 1.6;
+        }
+    }
+
+    .action-buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+
+        .call,.sms{
+            width: 50%;
+            --border-radius:25px;
+            --padding-bottom:24px;
+            --padding-end:24px;
+            --padding-top:24px;
+            --padding-start:24px;
+
+            ion-icon{
+                margin-right: 10px;
+            }
+        }
+        .call{
+            --background: #ff4d58;
+            margin-right: 20px;
+        }
+        .sms{
+            --background:#4d79ff;
+        }
+    }
+}
+
+.middle-section
+{
+    display: flex;
+    flex-direction: column;
+
+    h3{
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    p{
+        font-weight: bold;
+    }
+
+    .content{
+        text-align: center;
+        img{
+            height: 90px;
+            width: 90px;
+            object-fit: contain;
+        }
+        p
+        {
+            color: #473f97;
+        }
+    }
+}
+
+.bottom-section{
+    background: url("/assets/img/morado.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    img{
+        height: 112px;
+        padding: 5px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        h3{
+            font-size: 1.3rem;
+            margin: 1;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        p{
+            color:#c7c7c7;
+            margin-top: 4px;
+        }
+    }
+}

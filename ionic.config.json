@@ -1,0 +1,7 @@
+{
+  "name": "SPApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

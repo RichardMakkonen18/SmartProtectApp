@@ -1,0 +1,131 @@
+ion-content{
+    position: relative;
+    --background: #fff;
+}
+
+.image-silder{
+    position: relative;
+    span{
+        position: absolute;
+        z-index: 2;
+        margin: 20px;
+        background: #fdfcfc;
+        padding: 3px 9px;
+        font-size: 1.7rem;
+        color: #000;
+        border-radius: 11px;
+    }
+    ion-slides{
+        --bullet-background-active: #ef94d7;
+        height: 50vh;
+        width: 100%;
+
+        img{
+            width: 100vw;
+            max-width: 100vw;
+            object-fit: cover;
+        }
+
+    }
+}
+
+.profile-info{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #fff;
+    margin-top: -30px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    .user-info{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .basic-info{
+            display: flex;
+            flex-direction: column;
+            h1,p{
+                margin: 0 0 10px 0;
+            }
+            p{
+                font-size: 1rem;
+                color: #adadad;
+                ion-icon{
+                    color: #ef94d7;
+                    margin-right: 5px;
+                }
+            }
+            h1
+            {
+                font-size: 1.3rem;
+                color: #000;
+                font-weight: 900;
+            }
+        }
+        .share1{
+            background: #ef94d7;
+            padding: 15px;
+            color: #fff;
+            border-radius: 11px;
+            color: #000;
+        }
+    }
+
+    .about-me{
+        padding: 0 20px;
+
+        h5,p{
+            margin: 0 0  5px 0;
+        }
+        h5{
+            color: #000;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        p{
+            color: #000;
+            font-size: 18px;
+            .more-less{
+                color: #ef94d7;
+            }
+        }
+    }
+
+    .my-hobbies{
+        padding: 20px;
+        margin-bottom: 50px;
+        h5{
+            color: #000;
+            margin: 0 0 5px 0;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        ion-chip{
+            color: #fff;
+            margin: 0 30px 10px 0;
+        }
+    }
+    .action-buttons{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        .accept-reject{
+            color: #fff;
+            background: #ef94d7;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+        }
+        .reject{
+            border-top-right-radius: 30px;
+            font-size: 1.1rem;
+        }
+        .accept{
+            border-top-left-radius: 30px;
+            font-size: 1.5rem;
+        }
+    }
+}

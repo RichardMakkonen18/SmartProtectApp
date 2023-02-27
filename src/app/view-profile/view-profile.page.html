@@ -1,0 +1,57 @@
+<ion-content>
+  <div class="image-silder">
+    <span><ion-icon name="arrow-back-outline" routerLink="/tabs/tab3"></ion-icon></span>
+    <ion-slides pager="true">
+      <ion-slide>
+        <img src="/assets/img/image1.jpg" />
+      </ion-slide>
+      <ion-slide>
+        <img src="/assets/img/image1.jpg" />
+      </ion-slide>
+      <ion-slide>
+        <img src="/assets/img/image1.jpg" />
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div class="profile-info">
+    <div class="user-info">
+      <div class="basic-info">
+        <h1>Olivia, 21</h1>
+        <p>
+          <ion-icon name="location-outline"></ion-icon>
+          lorem impsum (3km)
+        </p>
+      </div>
+      <ion-icon name="share-social-outline" class="share1"></ion-icon>
+    </div>
+    <div class="about-me">
+      <h5>About me</h5>
+      <p *ngIf="!isSeeMore">
+        {{('Hi, I am olivia, I am 21 years old and I am looking for
+        somenone, I am olivia, I am 21 years old and I am looking for
+        somenone.').substring(0,100)}}
+        <span (click)="isSeeMore = true">...</span>
+        <span class="more-less">&nbsp; See more</span>
+      </p>
+      <p *ngIf="isSeeMore">
+        {{('Hi, I am olivia, I am 21 years old and I am looking for
+        somenone, I am olivia, I am 21 years old and I am looking for
+        somenone.')}}
+        <span class="more-less" (click)="isSeeMore = false"
+          >&nbsp; See less</span>
+      </p>
+    </div>
+    <div class="my-hobbies">
+      <h5>My hobbies</h5>
+      <div class="hobbies-list">
+        <ion-chip *ngFor="let hobby of hobbies; let i = index" [ngStyle]="{'background-color': getColor(i)}">
+          <ion-label>{{hobby}}</ion-label>
+        </ion-chip>
+      </div>
+    </div>
+    <ion-footer class="action-buttons">
+      <div class="accept-reject reject"><ion-icon name="close-outline"></ion-icon></div>
+      <div class="accept-reject accept"><ion-icon name="heart-outline"></ion-icon></div>
+    </ion-footer>
+  </div>
+</ion-content>
